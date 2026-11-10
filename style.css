@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f7;
+    color: #222;
+    transition: 0.3s;
+}
+
+.todo-container {
+    width: 380px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    font-size: 11px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: #7161ff;
+    color: white;
+    border-radius: 3px;
+    padding: 7px 10px;
+}
+
+#theme {
+    font-size: 15px;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #d9d5ff;
+    font-size: 11px;
+}
+
+.note input {
+    accent-color: #7161ff;
+    cursor: pointer;
+}
+
+.note span {
+    flex: 1;
+}
+
+.note.completed span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions button {
+    background: transparent;
+    color: #888;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.actions button:hover {
+    color: #7161ff;
+}
+
+body.dark {
+    background: #242424;
+    color: white;
+}
+
+body.dark input[type="text"] {
+    background: #333;
+    color: white;
+    border-color: #666;
+}
+
+body.dark .note {
+    border-color: #454078;
+}
+
+body.dark .actions button {
+    color: #bbb;
+}
